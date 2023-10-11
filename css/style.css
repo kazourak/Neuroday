@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&family=Red+Hat+Display:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: none;
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth !important;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.body-section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* HEADER NAVBAR */
+
+.header-section {
+    position: fixed;
+    overflow: hidden;
+    background-color: black;
+    z-index: 999;
+    user-select: none;
+}
+
+.header-section .container {
+    width: 100vw;
+    height: 80px;
+    padding: 0 50px 0 20px;
+}
+
+.header-section .container .wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-section .container .wrapper .logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header-section .container .wrapper .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-section .container .wrapper .links {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header-section .container .wrapper .links p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.header-section .container .wrapper .links p:hover {
+    color: #eaeaea;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header-section .container .wrapper .links {
+        display: none;
+    }
+
+    .header-section .container .wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* BANNER */
+
+.banner-section .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: url("../img/frame1.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.banner-section .container .logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.banner-section .container .logo img {
+    width: 90%;
+}
+
+.banner-section .container .logo .description {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 2rem;
+    color: rgb(125, 63, 197);
+    bottom: 0;
+    width: 1000px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: #ffffff;
+}
+
+/* COUNTDOWN */
+
+.banner-section .container .countdown {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+.banner-section .container .countdown .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 170px;
+}
+
+.banner-section .container .countdown .items div {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 900;
+}
+
+.banner-section .container .countdown .items div:last-child {
+    font-size: 2.6em;
+    font-weight: 900;
+}
+
+/* INFO */
+
+.info-section .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.info-section .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.info-section .container .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 150px 30px 150px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.info-section .container .items p {
+    color: #3d3d3d;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.info-section .container .items span {
+    color: #3d3d3d;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.info-section .container .bg {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 600px;
+    height: 600px;
+}
+
+.info-section .container .bg img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+/* PLANNING */
+
+.planning-section .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    background: url("../img/planning-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.planning-section .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+}
+
+.planning-section .container .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 30px 10px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.planning-section .container .items p {
+    color: #3d3d3d;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.planning-section .container .items span {
+    color: #3d3d3d;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.planning-section .container .items .planning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 700px;
+    margin-top: 25px;
+}
+
+.planning-section .container .items .planning .items {
+    width: 100%;
+    height: 100%;
+}
+
+.planning-section .container .items .planning .items .stars {
+    width: 30px;
+    height: 30px;
+}
+
+.planning-section .container .items .planning .items .moment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80px;
+    gap: 10px;
+}
+
+.planning-section .container .items .planning .items .moment p {
+    font-size: 1.6em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.planning-section .container .items .planning .items .moment .decoration {
+    width: 15px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* SPEAKERS */
+
+.speakers-section .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.speakers-section .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.speakers-section .container .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.speakers-section .container .items p {
+    color: #3d3d3d;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.speakers-section .container .items span {
+    color: #3d3d3d;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.speakers-section .container .items .speakers {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0 20% 0 20%;
+}
+.speakers-section .container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: url("../img/zdlogo.png") no-repeat;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(321deg) brightness(104%) contrast(101%);
+    opacity: 0.03;
+    z-index: -1;
+}
+
+
+.speakers-section .container .items .speakers .items {
+    flex: 50%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+
+    width: 285px;
+    height: auto;
+    gap: 10px;
+    padding: 0 10% 50px 10%;
+
+
+}
+
+.speakers-section .container .items .speakers .items p {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 27px;
+    padding-bottom: 1px;
+}
+
+.speakers-section .container .items .speakers .items span {
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 27px;
+    padding-bottom: 1px;
+}
+
+.speakers-section .container .items .speakers .items .logo {
+    width: 88px;
+    height: auto;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(321deg) brightness(104%) contrast(101%);
+
+
+}
+
+
+.speakers-section .container .items .speakers .items img {
+    margin-bottom: 10px;
+    width: 248px;
+    height: 248px;
+    border-radius: 20px;
+}
+
+/* INSCRIPTION */
+
+.inscription-section .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    background: url("../img/planning-bg.png") no-repeat;
+    background-size: cover;
+}
+
+.inscription-section .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+}
+
+.inscription-section .container .localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.inscription-section .container .localisation .items {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.inscription-section .container .localisation .items img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.inscription-section .container .localisation .items p {
+    color: white;
+    font-size: 1em;
+}
+
+/* SPONSO */
+
+.sponso-section .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.sponso-section .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.sponso-section .container .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 150px 30px 150px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.sponso-section .container .items p {
+    color: #3d3d3d;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.sponso-section .container .items span {
+    color: #3d3d3d;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.sponso-section .container .items .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+}
+
+.sponso-section .container .items .list img {
+    width: 100px;
+}
+
+/* FOOTER */
+
+.footer-section .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #e3e3e3;
+}
+
+.footer-section .container .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-section .container .items a {
+    color: white;
+}
+
+.footer-section .container .items .button {
+    padding: 10px;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    background-color: black;
+
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px) {
+
+    .banner-section .container .logo {
+        width: 600px;
+        height: 50%;
+    }
+
+    .banner-section .container .logo img {
+        width: 90%;
+    }
+
+    .banner-section .container .logo .description {
+        font-size: 1.2rem;
+        width: 500px;
+        height: 50px;
+        border-radius: 40px;
+        background-color: #ffffff;
+    }
+
+    .banner-section .container .countdown {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner-section .container .countdown .items div {
+        font-size: 1.7em;
+    }
+
+    .banner-section .container .countdown .items div:last-child {
+        font-size: 1.9em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .banner-section .container .logo {
+        width: 500px;
+        height: 600px;
+    }
+
+    .banner-section .container .logo img {
+        width: 60%;
+    }
+
+    .banner-section .container .logo .description {
+        font-size: 1rem;
+        color: rgb(125, 63, 197);
+        bottom: 0;
+        width: 400px;
+        height: 50px;
+        border-radius: 40px;
+        background-color: #ffffff;
+    }
+
+}
+
+@media screen and (max-height: 1005px) {
+    .banner-section .container .countdown {
+        height: 160px;
+    }
+}
+
+@media screen and (max-height: 960px) {
+    .banner-section .container .countdown {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .banner-section .container .countdown {
+        height: 100px;
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-width: 550px;
+    }
+
+    .banner-section .container .countdown .items div {
+        font-size: 1em;
+    }
+
+    .banner-section .container .countdown .items div:last-child {
+        font-size: 1.2em;
+    }
+}

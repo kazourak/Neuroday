@@ -1,28 +1,462 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Le Neuroday By ZenmonDrops</title>
-    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>NeuroDay by Zenmon Drops</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/countdown.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
 </head>
 <body>
-<div class="loader">
-    <img src="public/drops.png" alt="loader">
+<div class="body-section">
+    <header class="header-section">
+        <div class="container">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div class="links">
+                    <a href="#home"><p>Accueil</p></a>
+                    <a href="#b1" id="b1"><p>Présentation</p></a>
+                    <a href="#b2" id="b2"><p>La soirée</p></a>
+                    <a href="#b3" id="b3"><p>Les experts</p></a>
+                    <a href="#b4" id="b4"><p>Inscription</p></a>
+                    <a href="#partenaires"><p>Partenaires</p></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner-section" id="home">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/neuroday.svg" alt="neuroday">
+                <div class="description">
+                    <p>Explorez l'univers cognitif de vos collaborateurs...</p>
+                </div>
+            </div>
+            <div class="countdown">
+                <div class="items">
+                    <div id="days">0</div>
+                    <div>JOURS</div>
+                </div>
+                <div class="items">
+                    <div id="hours">0</div>
+                    <div>HEURES</div>
+                </div>
+                <div class="items">
+                    <div id="minutes">0</div>
+                    <div>MINUTES</div>
+                </div>
+                <div class="items">
+                    <div id="seconds">0</div>
+                    <div>SECONDES</div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
-<div class="wrapper">
-    <div class="header">
-        <img id="logo-zen" src="./public/blanc.png" alt="logo-zen">
-        <img id="logo-neuro" src="./public/neuroday.svg" alt="logo-neuro">
+<section class="info-section" id="a-propos">
+    <div class="container">
+        <div class="title">
+            <p>Présentation</p>
+        </div>
+        <div class="items">
+            <p>Bienvenue sur le site officiel du Neuro’Day !</p>
+            <span>Le <b>Neuro’Day</b> est l’évènement qui réunit les acteurs de <b>l’innovation</b> autour des sujets clés pour le développement de nos organisations : <b>motivation</b>, <b>engagement</b>, <b>fidélisation des talents</b>, qualité de vie et conditions de travail.</span>
+            <span>Notre mission est d’apporter une bonne goutte de fraîcheur dans notre quotidien professionnel et <b>d’impulser une dynamique d’épanouissement pro/perso</b> afin de libérer notre plein potentiel tout en contribuant à l’épanouissement de notre société.</span>
+            <span>Le <b>Neuro’Day</b> nous permet de faire connaître au plus grand nombre d’entreprises et collaborateurs, les dernières tendances et bonnes pratiques. Grâce à la participation <b>d’experts</b>, <b>scientifiques</b>, <b>innovateurs</b> et l'animation <b>d'ateliers ludiques et sensoriels</b>.</span>
+            <span>🧠 Nous vous souhaitons un <b>Neuro’Day</b> pétillant, innovant, inspirant ! Enjoy.</span>
+            <div style="width: 40px; height: 5px; border-radius: 10px; background-color: black"></div>
+            <span>🍋 Fait avec la beauté du zeste par <a href="https://zenmondrops.com/" target={"_blank"}>Zenmon Drops</a>.</span>
+        </div>
+        <div class="bg">
+            <img src="./img/drops.png" alt="drops">
+        </div>
     </div>
-    <div class="body">
-        <button class="button-inscription">Inscription</button>
+</section>
+<section class="planning-section" id="la-soiree">
+    <div class="container">
+        <div class="title">
+            <p>La soirée</p>
+        </div>
+        <div class="items">
+            <div class="planning">
+                <div class="items">
+                    <div class="moment">
+                        <p>17h45 - Accueil</p>
+                    </div>
+                    <img src="./img/etoile.svg" alt="etoile" class="stars">
+                    <div class="moment">
+                        <p>18h00 - Présentation, remerciements</p>
+                    </div>
+                    <img src="./img/etoile.svg" alt="etoile" class="stars">
+                    <div class="moment">
+                        <p>18h30 - Table ronde animée par des experts : Hard Skills vs Soft Skills, quels enjeux pour demain ?</p>
+                    </div>
+                    <img src="./img/etoile.svg" alt="etoile" class="stars">
+                    <div class="moment">
+                        <p>19h30 - Auto-évaluation, mapping individuel et collectif des Soft Skills</p>
+                    </div>
+                    <img src="./img/etoile.svg" alt="etoile" class="stars">
+                    <div class="moment">
+                        <p>19h45 - Activité neuro-sensorielle et application pratique</p>
+                    </div>
+                    <img src="./img/etoile.svg" alt="etoile" class="stars">
+                    <div class="moment">
+                        <p>20h00 - Apéritif et musique live </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer">
-        <a href=""><span>ZenmonDrops</span></a>
-        <a href=""><span>Inscription</span></a>
-        <a href=""><span>Programme</span></a>
+</section>
+<section class="speakers-section" id="les-experts">
+    <div class="container">
+        <div class="title">
+            <p>Les experts</p>
+        </div>
+        <div class="items">
+            <p>Découvrez nos experts pour la table ronde :</p>
+            <div class="speakers">
+                <div class="items">
+                    <img src="./img/marina.jpeg" alt="marina">
+                    <a href="https://www.linkedin.com/in/marina-gravigny-882419123/" target="_blank"><p>Marina Gravigny</p></a>
+                    <span>Responsable formation & développement des compétences</span>
+                    <img src="./img/credit.png" alt="credit" class="logo">
+                </div>
+                <div class="items">
+                    <img src="./img/pierre.jpeg" alt="pierre">
+                    <a href="https://www.linkedin.com/in/pierre-bichon-63305b2/" target="_blank"><p>Pierre Bichon</p></a>
+                    <span>CTO Edenred</span>
+                    <br/>
+                    <img src="./img/Edenred.png" alt="credit" class="logo">
+                </div>
+                <div class="items">
+                    <img src="./img/mohamed.jpeg" alt="mohamed">
+                    <a href="https://www.linkedin.com/in/mohamed-jaber-b380544b/" target="_blank"><p>Mohamed Jaber</p></a>
+                    <span>Neurosciences Professor, Inserm research unit Director</span>
+                    <img src="./img/inserm.png" alt="credit" class="logo">
+                </div>
+                <div class="items">
+                    <img src="./img/olivier.jpeg" alt="olivier">
+                    <a href="https://www.linkedin.com/in/oliviergrosse/" target="_blank"><p>Olivier Grosse</p></a>
+                    <span>Directeur 42 Angoulême</span>
+                    <br/>
+                    <img src="./img/42.png" alt="credit" class="logo">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<script type="module" src="/main.js"></script>
+</section>
+<section class="inscription-section" id="inscription">
+    <div class="container">
+        <div class="title">
+            <p>Inscription</p>
+        </div>
+        <div>
+            <!-- Begin Brevo Form -->
+            <!-- START - We recommend to place the below code in head tag of your website html  -->
+            <style>
+                @font-face {
+                    font-display: block;
+                    font-family: Roboto;
+                    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+                }
+
+                @font-face {
+                    font-display: fallback;
+                    font-family: Roboto;
+                    font-weight: 600;
+                    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+                }
+
+                @font-face {
+                    font-display: fallback;
+                    font-family: Roboto;
+                    font-weight: 700;
+                    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+                }
+
+                #sib-container input:-ms-input-placeholder {
+                    text-align: left;
+                    font-family: "Helvetica", sans-serif;
+                    color: #c0ccda;
+                }
+
+                #sib-container input::placeholder {
+                    text-align: left;
+                    font-family: "Helvetica", sans-serif;
+                    color: #c0ccda;
+                }
+
+                #sib-container textarea::placeholder {
+                    text-align: left;
+                    font-family: "Helvetica", sans-serif;
+                    color: #c0ccda;
+                }
+            </style>
+            <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+            <!--  END - We recommend to place the above code in head tag of your website html -->
+
+            <!-- START - We recommend to place the below code where you want the form in your website html  -->
+            <div class="sib-form" style="text-align: center;
+         background-color: transparent;                                 ">
+                <div id="sib-form-container" class="sib-form-container">
+                    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                            </svg>
+                            <span class="sib-form-message-panel__inner-text">
+                          Nous n&#039;avons pas pu confirmer votre inscription.
+                      </span>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                            </svg>
+                            <span class="sib-form-message-panel__inner-text">
+                          Votre inscription est confirmée.
+                      </span>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:10px; border-width:3px; border-color:#9a5ac5; border-style:solid; direction:ltr">
+                        <form id="sib-form" method="POST" action="https://7fdb0f32.sibforms.com/serve/MUIFAM5hfY8FELPdb5oCvDFTTNcPF-aH5Ik2tZ73EWH-iP0UpdFDW1men23llEVnhBtEWNcWvTXOGXksbdpZmbMkngiYfmFlYrR0D-pvabrSkd3hRNSDlX69TAjmp_q2UG4ABMFp-INRk5FxypA5k6Pl_tmELfUCT24cju7AvWT6z8M3qDsgrISfyliAaO21f87HA6btKrQB7SuU" data-type="subscription">
+                            <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:&quot;Futura&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <p>Neuro’Day #1 - Inscription</p>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <div class="sib-text-form-block">
+                                        <p>🔥 N'attendez plus ! Pour vous inscrire, remplissez le formulaire ci-dessous. Places limitées. Une inscription pour chaque personne est exigée.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-input sib-form-block">
+                                    <div class="form__entry entry_block">
+                                        <div class="form__label-row ">
+                                            <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="PRENOM" data-required="*">Prénom</label>
+
+                                            <div class="entry__field">
+                                                <input class="input " maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="off" placeholder="Votre prénom" data-required="true" required />
+                                            </div>
+                                        </div>
+
+                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-input sib-form-block">
+                                    <div class="form__entry entry_block">
+                                        <div class="form__label-row ">
+                                            <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="NOM" data-required="*">Nom</label>
+
+                                            <div class="entry__field">
+                                                <input class="input " maxlength="200" type="text" id="NOM" name="NOM" autocomplete="off" placeholder="Votre nom" data-required="true" required />
+                                            </div>
+                                        </div>
+
+                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-input sib-form-block">
+                                    <div class="form__entry entry_block">
+                                        <div class="form__label-row ">
+                                            <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">E-mail professionnel</label>
+
+                                            <div class="entry__field">
+                                                <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Votre adresse mail" data-required="true" required />
+                                            </div>
+                                        </div>
+
+                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-input sib-form-block">
+                                    <div class="form__entry entry_block">
+                                        <div class="form__label-row ">
+                                            <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="NOM_ENTREPRISE" data-required="*">Nom de l&#039;entreprise</label>
+
+                                            <div class="entry__field">
+                                                <input class="input " maxlength="200" type="text" id="NOM_ENTREPRISE" name="NOM_ENTREPRISE" autocomplete="off" placeholder="Votre entreprise" data-required="true" required />
+                                            </div>
+                                        </div>
+
+                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-select sib-form-block" data-required="true">
+                                    <div class="form__entry entry_block">
+                                        <div class="form__label-row ">
+                                            <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#3c4858;" for="NEURODAY_ADVERTISE" data-required="*">Comment avez-vous connu le Neuro’Day ?</label>
+                                            <div class="entry__field">
+                                                <select class="input" id="NEURODAY_ADVERTISE" name="NEURODAY_ADVERTISE" data-required="true">
+                                                    <option value="" disabled selected hidden>Choisissez une valeur</option>
+
+                                                    <option class="sib-menu__item" value="1">
+                                                        Presse
+                                                    </option>
+                                                    <option class="sib-menu__item" value="2">
+                                                        Réseaux sociaux
+                                                    </option>
+                                                    <option class="sib-menu__item" value="3">
+                                                        Partenaires
+                                                    </option>
+                                                    <option class="sib-menu__item" value="4">
+                                                        Autre
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-radiobutton-group sib-form-block" data-required="true">
+                                    <div class="form__entry entry_mcq">
+                                        <div class="form__label-row ">
+                                            <div>
+                                                <div class="entry__choice" style="">
+                                                    <label>
+                                                        <input /type="radio" name="NEURODAY_CHOIX" class="input_replaced" value="1" required>
+                                                        <span class="radio-button" style="margin-left: "></span><span style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">Je participe en présentiel.</span> </label>
+                                                </div>
+                                                <div class="entry__choice" style="">
+                                                    <label>
+                                                        <input /type="radio" name="NEURODAY_CHOIX" class="input_replaced" value="2" required>
+                                                        <span class="radio-button" style="margin-left: "></span><span style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent;">Je participe en visioconférence.</span> </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+                                    <div class="sib-text-form-block">
+                                        <p>Votre adresse e-mail est uniquement utilisée pour communiquer sur le Neuro`Day. Vous pouvez vous désinscrire à tout moment à l'aide du lien inclus dans chaque email.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding: 8px 0;">
+                                <div class="sib-form-block" style="text-align: center">
+                                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:center; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#FFFFFF; background-color:#9026ca; border-radius:6px; border-width:0px;" form="sib-form" type="submit">
+                                        <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                                            <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                                        </svg>
+                                        S&#039;INSCRIRE
+                                    </button>
+                                </div>
+                            </div>
+
+                            <input type="text" name="email_address_check" value="" class="input--hidden">
+                            <input type="hidden" name="locale" value="fr">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- END - We recommend to place the below code where you want the form in your website html  -->
+
+            <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+            <script>
+                window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
+                window.LOCALE = 'fr';
+                window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
+
+                window.REQUIRED_ERROR_MESSAGE = "Vous devez renseigner ce champ. ";
+
+                window.GENERIC_INVALID_MESSAGE = "Les informations que vous avez fournies ne sont pas valides. Veuillez vérifier le format du champ et réessayer.";
+
+
+
+
+                window.translation = {
+                    common: {
+                        selectedList: '{quantity} liste sélectionnée',
+                        selectedLists: '{quantity} listes sélectionnées'
+                    }
+                };
+
+                var AUTOHIDE = Boolean(0);
+            </script>
+            <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+
+            <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+            <!-- End Brevo Form -->
+        </div>
+        <div class="localisation">
+            <div class="items">
+                <img src="./img/02.png" alt="mail">
+                <p>Email: contact@zenmondrops.com</p>
+            </div>
+            <div class="items">
+                <img src="./img/03.png" alt="localisation">
+                <p>Adresse: Crédit Agricole, 30 Rue d'Epagnac, 16800 Soyaux</p>
+            </div>
+            <div class="items">
+                <img src="./img/01.png" alt="date">
+                <p>Date: 7 Novembre 2023</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sponso-section" id="partenaires">
+    <div class="container">
+        <div class="title">
+            <p>Partenaires</p>
+        </div>
+        <div class="items">
+            <p>Merci à eux pour le soutien !</p>
+            <div class="list">
+                <img src="./img/p1.png" alt="p1">
+                <img src="./img/p2.png" alt="p2">
+                <img src="./img/p3.png" alt="p3">
+                <img src="./img/p4.png" alt="p4">
+                <img src="./img/p5.png" alt="p5">
+                <img src="./img/p6.png" alt="p6">
+                <img src="./img/p7.png" alt="p7">
+                <img src="./img/p8.png" alt="p8">
+                <img src="./img/p9.png" alt="p9">
+                <img src="./img/p10.jpg" alt="p10">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer-section">
+    <div class="container">
+        <div class="items">
+            <p>© 2023 - Made with color and zest by <a style="color: #282828" href="https://zenmondrops.com/" target={"_blank"}>Zenmon Drops</a> | All rights reserved</p>
+        </div>
+        <div class="items">
+            <p>Une question ?</p>
+            <a href="https://zenmondrops.com/contact/" target="_blank">
+                <div class="button">Contactez-nous</div>
+            </a>
+        </div>
+    </div>
+</section>
 </body>
 </html>
