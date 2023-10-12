@@ -18,10 +18,6 @@ img {
     user-drag: none;
 }
 
-.body-section {
-    width: 100%;
-    height: 100vh;
-}
 
 /* HEADER NAVBAR */
 
@@ -77,9 +73,13 @@ img {
     transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
-    .header-section .container .wrapper .links {
+    .header-section .container .wrapper .logo {
+        width: 90px;
+        height: 90px;
+    }
+        .header-section .container .wrapper .links {
         display: none;
     }
 
@@ -93,91 +93,105 @@ img {
 /* BANNER */
 
 .banner-section .container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-top: 200px;
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    background: url("../img/frame1.png");
-    background-size: cover;
     height: 100vh;
+    background: url("../img/frame1.png")no-repeat;
+    background-size: cover;
 }
 
-.banner-section .container .logo {
-    position: absolute;
+.banner-section .container .description {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    top: 100px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 600px;
-    height: 400px;
+    justify-content: center;
+    font-size: 1.8rem;
+    width: auto;
+    padding: 1% 7% 1% 7%;
+    height: auto;
+    border-radius: 40px;
+    margin-top: 3%;
+    background-color: #ffffff;
+}
+.banner-section .container .description {
+    font-weight: 900;
+    color: rgb(125, 63, 197);
+}
+
+
+.banner-section .container .logo{
+    width: 45%;
+    height: auto;
 }
 
 .banner-section .container .logo img {
-    width: 90%;
+    width: 100%;
 }
 
-.banner-section .container .logo .description {
-    position: absolute;
+.banner-section .container .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 900;
-    font-size: 1.2rem;
-    color: rgb(125, 63, 197);
-    bottom: 0;
-    width: 500px;
-    height: 50px;
+    width: 90%;
+    margin-top: 10px;
+    height: 120px;
+    gap: 2%;
+}
+.banner-section .container .button .items {
+    display: flex;
+    align-items: center;
     border-radius: 40px;
-    background-color: #ffffff;
+    justify-content: center;
+    font-size: 1.4em;
+    font-weight: 900;
+    color: white;
+    width: 200px;
+    height: 70px;
+    border: solid 2px rgba(255, 255, 255, 1);
+    background-color: rgba(61, 61, 61, 0);
+    transition: all 0.2s ease-in-out;
+
 }
 
-/* COUNTDOWN */
+.banner-section .container .button .items:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
 
 .banner-section .container .countdown {
-    position: absolute;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 70px;
-    padding-right: 70px;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
+    position: absolute;
+    bottom: 10px;
+    width: 80%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    gap: 20px;
+    padding: 0 20px 0 20px;
+    border-radius: 30px;
 }
 
 .banner-section .container .countdown .items {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 140px;
-}
-
-.banner-section .container .countdown .items div {
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
     color: white;
-    font-size: 1.8em;
-    font-weight: 900;
+    font-weight: 700;
+}
+.banner-section .container .countdown .items div:first-child {
+    font-size: 2.1em;
 }
 
 .banner-section .container .countdown .items div:last-child {
-    font-size: 2em;
-    font-weight: 900;
+    font-size: 2.5em;
 }
 
 /* INFO */
@@ -584,88 +598,58 @@ img {
 /* RESPONSIVE */
 
 @media screen and (max-width: 1100px) {
-
-    .banner-section .container .logo {
-        width: 800px;
-        height: 50%;
+    .banner-section .container {
+        padding-top: 550px;
     }
 
-    .banner-section .container .logo img {
-        width: 90%;
-    }
-
-    .banner-section .container .logo .description {
-        font-size: 1.8rem;
-        width: 900px;
-        height: 80px;
-        border-radius: 40px;
-        background-color: #ffffff;
-    }
-
-    .banner-section .container .countdown {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .banner-section .container .countdown .items div {
-        font-size: 1.4em;
-    }
-
-    .banner-section .container .countdown .items div:last-child {
+    .banner-section .container .countdown .items div:first-child {
         font-size: 1.3em;
     }
 
-}
+    .banner-section .container .countdown .items div:last-child {
+        font-size: 1.8em;
+    }
 
-@media screen and (max-width: 700px) {
 
-    .banner-section .container .logo {
-        width: 500px;
-        height: 600px;
+
+    .banner-section .container .logo{
+        width: 55%;
+        height: auto;
     }
 
     .banner-section .container .logo img {
-        width: 60%;
-    }
-
-    .banner-section .container .logo .description {
-        font-size: 1rem;
-        color: rgb(125, 63, 197);
-        bottom: 0;
-        width: 400px;
-        height: 50px;
-        border-radius: 40px;
-        background-color: #ffffff;
-    }
-
-}
-
-@media screen and (max-height: 1005px) {
-    .banner-section .container .countdown {
-        height: 160px;
+        width: 100%;
     }
 }
 
-@media screen and (max-height: 360px) {
-    .banner-section .container .countdown {
-        display: none;
-    }
+@media screen and (max-width: 700px) {
 }
 
-@media screen and (max-width: 910px) {
-    .banner-section .container .countdown {
-        height: 100px;
-        border-radius: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        min-width: 550px;
+@media screen and (max-height: 900px) {
+    .banner-section .container {
+        padding-top: 250px;
     }
 
-    .banner-section .container .countdown .items div {
-        font-size: 1em;
+    .banner-section .container .countdown .items div:first-child {
+        font-size: 1.3em;
     }
 
     .banner-section .container .countdown .items div:last-child {
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
+
+
+
+    .banner-section .container .logo{
+        width: 55%;
+        height: auto;
+    }
+
+    .banner-section .container .logo img {
+        width: 100%;
+    }
+    .banner-section .container .countdown{
+        display: none;
+    }
+
 }
